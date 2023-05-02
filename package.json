@@ -1,0 +1,51 @@
+{
+  "name": "AmusnetLiveCoding",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "buildAndZip": "node scripts/buildAndZip.js --debugOnly=false",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.release.config.js",
+    "buildDebug": "cross-env NODE_ENV=development webpack --config webpack.release.config.js",
+    "webpack-dev": "cross-env NODE_ENV=dev webpack --config webpack.config.js",
+    "webpack-dev-server": "webpack-dev-server --config webpack.config.js --host 0.0.0.0 --port 3000 --static dev --hot",
+    "dev": "cross-env NODE_ENV=dev npm run webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "Ivan Ivanov",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "@types/es6-shim": "0.31.35",
+    "@types/lodash": "4.14.98",
+    "@types/mini-css-extract-plugin": "1.4.3",
+    "circular-dependency-plugin": "^5.2.2",
+    "copy-webpack-plugin": "4.5.2",
+    "cross-env": "7.0.0",
+    "css-loader": "5.2.4",
+    "directory-tree-webpack-plugin": "0.3.1",
+    "es6-shim": "0.35.3",
+    "html-webpack-plugin": "^5.5.1",
+    "mini-css-extract-plugin": "1.5.1",
+    "ncp": "2.0.0",
+    "ts-loader": "6.2.1",
+    "uglify-es": "3.3.9",
+    "webpack-cli": "^5.0.2",
+    "webpack-dev-server": "4.13.3"
+  },
+  "dependencies": {
+    "@pixi/sound": "4.3.3",
+    "fs-extra": "8.1.0",
+    "gsap": "3.9.1",
+    "lodash": "4.17.21",
+    "pixi-spine": "3.0.13",
+    "pixi.js": "6.3.0",
+    "pixi.js-legacy": "6.3.0",
+    "tslint": "6.1.0",
+    "typescript": "^5.0.4",
+    "webpack": "^5.81.0"
+  }
+}

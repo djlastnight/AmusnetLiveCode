@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "module": "commonjs",
+        "target": "es5",
+        "allowJs": true,
+        "baseUrl": "./src",
+        "skipLibCheck": true,
+        "resolveJsonModule": true,
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
+        // Migration to PIXI v6 requires this
+        "moduleResolution": "node",
+        // Migration to PIXI v6 requires this for importing 3rd-party dependencies like EventEmitter3
+        "esModuleInterop": true
+    },
+    "include": [
+        "game/src/*",
+        "core/**/*"
+    ]
+}
