@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "private": true,
+  "homepage": "http://djlastnight.github.io/AmusnetLiveCode",
   "scripts": {
     "buildAndZip": "node scripts/buildAndZip.js --debugOnly=false",
     "build": "cross-env NODE_ENV=production webpack --config webpack.release.config.js",
     "buildDebug": "cross-env NODE_ENV=development webpack --config webpack.release.config.js",
     "webpack-dev": "cross-env NODE_ENV=dev webpack --config webpack.config.js",
     "webpack-dev-server": "webpack-dev-server --config webpack.config.js --host 0.0.0.0 --port 3000 --static dev --hot",
-    "dev": "cross-env NODE_ENV=dev npm run webpack-dev-server"
+    "dev": "cross-env NODE_ENV=dev npm run webpack-dev-server",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "keywords": [],
   "author": "Ivan Ivanov",
