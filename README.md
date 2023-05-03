@@ -6,4 +6,6 @@ How to run the game:
 3. Run `npm run dev` at terminal  
 4. Open http://localhost:3000/ at your browser  
 
+Live version: https://djlastnight.github.io/AmusnetLiveCode/  
+
 Have fun :)
