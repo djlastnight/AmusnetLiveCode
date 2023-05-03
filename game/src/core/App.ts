@@ -9,6 +9,9 @@ import { Application } from "pixi.js";
 class App extends Application {
     constructor() {
         super({ resizeTo: window, backgroundColor: 0xffffff});
+        
+        // This code enables the pixi dev tools.
+        globalThis.__PIXI_APP__ = this;
     }
 }
 
